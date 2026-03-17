@@ -63,17 +63,17 @@
 ---
 
 ## 📂 Project Structure
+
+```bash
 Smart-Route-Optimizer/
 │
-├── main.py # Main CLI application
-├── graph.py # Graph implementation
-├── dijkstra.py # Dijkstra algorithm
-├── utils.py # Path reconstruction
-├── visualize.py # Graph visualization
+├── main.py          # Main CLI application
+├── graph.py         # Graph implementation
+├── dijkstra.py      # Dijkstra algorithm
+├── utils.py         # Path reconstruction
+├── visualize.py     # Graph visualization
 ├── README.md
 └── .gitignore
-
-
 
 ---
 
