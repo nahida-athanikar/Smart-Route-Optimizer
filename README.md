@@ -75,6 +75,7 @@ Smart-Route-Optimizer/
 ├── README.md
 └── .gitignore
 
+```
 ---
 
 ## 📸 Screenshots
@@ -107,7 +108,7 @@ Smart-Route-Optimizer/
 
 ## 📦 Installation Guide
 
-### 1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/Smart-Route-Optimizer.git
 cd Smart-Route-Optimizer
