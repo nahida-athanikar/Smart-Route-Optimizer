@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Route Optimizer</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+@media (max-width: 576px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    img {
+        max-height: 250px;
+        object-fit: contain;
+    }
+}
+</style>
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">🚀 Smart Route Optimizer</h1>
+
+    <div class="row g-4">
+
+          <!-- Add Route -->
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <div class="card p-3 shadow h-100">
+                  <h4 class="text-center">➕ Add Route</h4>
+
+                  <form method="POST" action="/add">
+                      <input class="form-control mb-2" type="text" name="u" placeholder="From City" required>
+                      <input class="form-control mb-2" type="text" name="v" placeholder="To City" required>
+                      <input class="form-control mb-2" type="number" name="w" placeholder="Distance" required>
+
+                      <button class="btn btn-success w-100">Add Route</button>
+                  </form>
+              </div>
+          </div>
+
+          <!-- Find Path -->
+          <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <div class="card p-3 shadow h-100">
+                  <h4 class="text-center">🔍 Find Shortest Path</h4>
+
+                  <form method="POST" action="/find">
+                      <input class="form-control mb-2" type="text" name="start" placeholder="Start City" required>
+                      <input class="form-control mb-2" type="text" name="end" placeholder="Destination City" required>
+
+                      <button class="btn btn-primary w-100">Find Path</button>
+                  </form>
+              </div>
+          </div>
+
+          <!-- Routes Table -->
+          <div class="col-12 col-lg-4 mb-3">
+              {% if routes %}
+              <div class="card p-3 shadow h-100" style="background:#eaf4ff;">
+                  <h5 class="text-center">📍 Routes</h5>
+
+                  <div class="table-responsive">
+                      <table class="table table-bordered table-sm text-center mt-2">
+                          <thead class="table-dark">
+                              <tr>
+                                  <th>From</th>
+                                  <th>To</th>
+                                  <th>Dist</th>
+                              </tr>
+                          </thead>
+
+                          <tbody>
+                              {% for u, v, w in routes %}
+                              <tr>
+                                  <td>{{ u }}</td>
+                                  <td>{{ v }}</td>
+                                  <td>{{ w }}</td>
+                              </tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+              {% endif %}
+          </div>
+
+    </div>
+
+    <!-- Message -->
+    {% if message %}
+    <div class="alert alert-info mt-4 text-center">
+        {{ message }}
+    </div>
+    {% endif %}
+
+    <!-- Result -->
+    {% if distance %}
+    <div class="card mt-4 p-3 shadow text-center">
+        <h4>Shortest Distance: {{ distance }}</h4>
+        <p><strong>Path:</strong> {{ path }}</p>
+    </div>
+    {% endif %}
+
+    <!-- Graph -->
+    {% if path %}
+    <div class="card mt-4 p-3 shadow mb-5">
+        <h5 class="text-center mb-3">📊 Route Visualization</h5>
+
+        <div class="d-flex justify-content-center">
+            <img 
+                src="{{ url_for('static', filename='graph.png') }}" 
+                class="img-fluid rounded"
+                style="max-width: 100%; height: auto;"
+            >
+        </div>
+    </div>
+    {% endif %}
+
+    
+</div>
+
+</body>
+</html>

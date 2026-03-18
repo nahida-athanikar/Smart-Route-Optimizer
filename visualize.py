@@ -1,3 +1,6 @@
+import matplotlib
+matplotlib.use('Agg')
+
 import networkx as nx
 import matplotlib.pyplot as plt
 
@@ -10,6 +13,9 @@ def draw_graph(graph, shortest_path=None):
 
     pos = nx.spring_layout(G)
 
+    # 🔥 Create new figure (important for Flask)
+    plt.figure(figsize=(8, 5))
+
     nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2000)
 
     labels = nx.get_edge_attributes(G, 'weight')
@@ -20,4 +26,7 @@ def draw_graph(graph, shortest_path=None):
         nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color='red', width=3)
 
     plt.title("Smart Route Visualization")
-    plt.show()
+
+    # 🔥 IMPORTANT CHANGE
+    plt.savefig("static/graph.png")   # image save
+    plt.close()                       # memory free
