@@ -24,16 +24,22 @@
 
 ### 🧠 Shortest Path Computation
 - Implements **Dijkstra’s Algorithm**
-- Finds optimal routes between cities
-- Efficient handling of weighted graphs
+- Finds optimal routes in weighted graphs
+- Finds optimal routes in weighted graphs
 
 ### 📍 Dynamic Route Management
-- Add routes dynamically via CLI
+- Add routes dynamically (CLI + Web UI)
 - Supports undirected weighted graphs
 
 ### 📊 Graph Visualization
 - Visual representation using **NetworkX & Matplotlib**
 - Highlights shortest path in **red color**
+- Automatically updates on new input
+
+### 🌐 Web Interface (Flask)
+- User-friendly browser-based UI
+- Add routes and compute paths interactively
+- Displays graph visualization inside browser
 
 ### 🎨 Interactive CLI
 - Styled terminal interface using **Rich**
@@ -54,24 +60,34 @@
 | Category        | Technology Used                     |
 |----------------|------------------------------------|
 | Language        | Python                             |
-| Algorithms      | Dijkstra’s Shortest Path Algorithm |
+| Algorithms      | Dijkstra’s Algorithm               |
 | Data Structures | Graph (Adjacency List)             |
+| Backend         | Flask                              |
 | Visualization   | NetworkX, Matplotlib               |
-| CLI Interface   | Rich (Colorful Terminal UI)        |
+| Frontend        | HTML, CSS, Bootstrap               |
+| CLI Interface   | Python (Menu-based CLI)            |
 | Environment     | Python Virtual Environment (.venv) |
 
 ---
 
-## 📂 Project Structure
-
+### 📂 Project Structure
 ```bash
 Smart-Route-Optimizer/
 │
-├── main.py          # Main CLI application
-├── graph.py         # Graph implementation
-├── dijkstra.py      # Dijkstra algorithm
-├── utils.py         # Path reconstruction
-├── visualize.py     # Graph visualization
+├── app.py              # Flask backend (web app)
+├── main.py             # CLI-based application
+├── graph.py            # Graph implementation
+├── dijkstra.py         # Dijkstra algorithm
+├── utils.py            # Path reconstruction
+├── visualize.py        # Graph visualization (image generation)
+│
+├── templates/
+│   └── index.html      # Web UI
+│
+├── static/
+│   └── graph.png       # Generated graph image
+│
+├── public/             # Optional images/screenshots
 ├── README.md
 └── .gitignore
 
@@ -84,25 +100,22 @@ Smart-Route-Optimizer/
 ![Graph Output](/public/Figure_1.png)
 ---
 
-## 👤 User Workflow
+### 👤 User Workflow
 
-1. **Start Application**
-   - Run the Python script using terminal
+# 🖥 CLI Mode
 
-2. **Add Routes**
-   - Input city connections with distances
+- Run main.py
+- Add routes via menu
+- Find shortest path
+- View result in terminal + graph window
 
-3. **Find Shortest Path**
-   - Enter source and destination cities
+# 🌐 Web Mode
 
-4. **View Result**
-   - Displays shortest distance and path
-
-5. **Visualize Graph**
-   - Graph window shows nodes and highlighted shortest path
-
-6. **Exit Application**
-   - Select exit option from menu
+- Run app.py
+- Open browser (http://127.0.0.1:5000)
+- Add routes via form
+- Compute shortest path
+- View result + graph visualization
 
 ---
 
@@ -122,14 +135,23 @@ python -m venv .venv
 
 3️⃣ Install Dependencies
 ```bash
-pip install networkx matplotlib rich
+pip install networkx matplotlib flask
 ```
 
 4️⃣ Run the Project
+# 🔹 CLI Version
 ```bash
 python main.py
 ```
+# 🔹 Web Version
+```bash
+python app.py
+```
+# Open in Brwoser:
+```bash
+http://127.0.0.1:5000
 
+```
 ⏱️ Time Complexity
 
 Dijkstra Algorithm: O((V + E) log V)
@@ -147,16 +169,6 @@ Output
 Shortest Distance: 15
 Path: A → B → D
 ```
-
-🚀 Future Improvements
-
-🌍 Map-based visualization (Folium)
-
-💾 Save & load graph from files
-
-🖥 GUI version (Tkinter / Web)
-
-🔍 Multi-route comparison
 
 
 ## 👤 Author
