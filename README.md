@@ -80,8 +80,8 @@ Smart-Route-Optimizer/
 
 ## 📸 Screenshots
 
-![Graph Output](screenshot.png)
-
+### 🔹 Graph Visualization
+![Graph Output](/public/Figure_1.png)
 ---
 
 ## 👤 User Workflow
