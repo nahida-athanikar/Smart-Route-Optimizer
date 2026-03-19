@@ -164,11 +164,11 @@ pip install networkx matplotlib flask
 ```
 
 4️⃣ Run the Project
-### 🔹 CLI Version
+🔹 CLI Version
 ```bash
 python main.py
 ```
-### 🔹 Web Version
+🔹 Web Version
 ```bash
 python app.py
 ```
@@ -180,7 +180,7 @@ http://127.0.0.1:5000
 ## ⏱️ Time Complexity
 
 Dijkstra Algorithm: O((V + E) log V)
----
+
 
 ## 🧪 Example
 Input
