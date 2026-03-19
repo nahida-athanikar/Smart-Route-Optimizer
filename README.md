@@ -1,3 +1,5 @@
+
+
 # 🚀 Smart Route Optimization System
 
 ![Python](https://img.shields.io/badge/Language-Python-blue)
@@ -10,7 +12,10 @@
 
 ---
 
-🚀 **Smart Route Optimization System** is a Python-based application that finds the shortest path between cities using graph algorithms. It includes an interactive CLI and visual graph representation to help users understand optimal routes efficiently.
+🚀 **Smart Route Optimization System** is a **graph-based route optimization application** built using Python and Dijkstra’s Algorithm.  
+Designed to compute shortest paths between cities with an interactive **web interface and real-time graph visualization**.
+
+Built using **Python, Flask, NetworkX, and Matplotlib**, this system allows users to dynamically add routes, calculate optimal paths, and visualize them for better understanding.
 
 ---
 
@@ -96,9 +101,27 @@ Smart-Route-Optimizer/
 
 ## 📸 Screenshots
 
-### 🔹 Graph Visualization
-![Graph Output](/public/Figure_1.png)
----
+<table>
+  <tr>
+    <td align="center"><b>Initial State (No Routes Added)</b></td>
+  </tr>
+  <tr>
+    <td><img src="public/before-added-route.png" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center">Adding Routes<b></b></td>
+  </tr>
+  <tr>
+    <td><img src="public/after-added-route.png" width="100%"/></td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Shortest Path & Graph Visualization Output</b></td>
+  </tr>
+  <tr>
+    <td><img src="public/graph.png" width="100%"/></td>
+  </tr>
+</table>
 
 ### 👤 User Workflow
 
