@@ -123,16 +123,16 @@ Smart-Route-Optimizer/
   </tr>
 </table>
 
-### 👤 User Workflow
+## 👤 User Workflow
 
-# 🖥 CLI Mode
+### 🖥 CLI Mode
 
 - Run main.py
 - Add routes via menu
 - Find shortest path
 - View result in terminal + graph window
 
-# 🌐 Web Mode
+### 🌐 Web Mode
 
 - Run app.py
 - Open browser (http://127.0.0.1:5000)
@@ -162,24 +162,24 @@ pip install networkx matplotlib flask
 ```
 
 4️⃣ Run the Project
-# 🔹 CLI Version
+### 🔹 CLI Version
 ```bash
 python main.py
 ```
-# 🔹 Web Version
+### 🔹 Web Version
 ```bash
 python app.py
 ```
-# Open in Brwoser:
+### Open in Brwoser:
 ```bash
 http://127.0.0.1:5000
 
 ```
-⏱️ Time Complexity
+## ⏱️ Time Complexity
 
 Dijkstra Algorithm: O((V + E) log V)
 
-🧪 Example
+## 🧪 Example
 Input
 ```bash
 A → B (10)
@@ -187,7 +187,7 @@ B → D (5)
 C → A (10)
 ```
 
-Output
+## Output
 ```bash
 Shortest Distance: 15
 Path: A → B → D
