@@ -23,6 +23,8 @@ Built using **Python, Flask, NetworkX, and Matplotlib**, this system allows user
 
 🔗 GitHub Repository: https://github.com/your-username/Smart-Route-Optimizer
 
+🔗 Live Demo: https://smart-route-optimizer.onrender.com/
+
 ---
 
 ## 📌 Features
@@ -178,6 +180,7 @@ http://127.0.0.1:5000
 ## ⏱️ Time Complexity
 
 Dijkstra Algorithm: O((V + E) log V)
+---
 
 ## 🧪 Example
 Input
@@ -187,7 +190,7 @@ B → D (5)
 C → A (10)
 ```
 
-## Output
+Output
 ```bash
 Shortest Distance: 15
 Path: A → B → D
