@@ -164,11 +164,11 @@ pip install networkx matplotlib flask
 ```
 
 4️⃣ Run the Project
-🔹 CLI Version
+###### 🔹 CLI Version
 ```bash
 python main.py
 ```
-🔹 Web Version
+###### 🔹 Web Version
 ```bash
 python app.py
 ```
