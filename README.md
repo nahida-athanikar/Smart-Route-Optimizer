@@ -1,6 +1,4 @@
-
-
-# 🚀 Smart Route Optimization System
+# 🗺️ Smart Route Optimization System
 
 ![Python](https://img.shields.io/badge/Language-Python-blue)
 ![Dijkstra](https://img.shields.io/badge/Algorithm-Dijkstra-green)
@@ -12,7 +10,7 @@
 
 ---
 
-🚀 **Smart Route Optimization System** is a **graph-based route optimization application** built using Python and Dijkstra’s Algorithm.  
+**Smart Route Optimization System** is a **graph-based route optimization application** built using Python and Dijkstra’s Algorithm.  
 Designed to compute shortest paths between cities with an interactive **web interface and real-time graph visualization**.
 
 Built using **Python, Flask, NetworkX, and Matplotlib**, this system allows users to dynamically add routes, calculate optimal paths, and visualize them for better understanding.
@@ -21,9 +19,92 @@ Built using **Python, Flask, NetworkX, and Matplotlib**, this system allows user
 
 ## 🚀 Project Demo
 
-🔗 GitHub Repository: https://github.com/your-username/Smart-Route-Optimizer
+🔗 GitHub Repository: https://github.com/Tanu882/Smart-Route-Optimizer/tree/main
 
 🔗 Live Demo: https://smart-route-optimizer.onrender.com/
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center"><b>Initial State (No Routes Added)</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/before-added-route.png" width="80%" style="border:1px solid #ccc; padding:8px; border-radius:8px;"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Adding Routes</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/after-added-route.png" width="80%" style="border:1px solid #ccc; padding:8px; border-radius:8px;"/>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Shortest Path & Graph Visualization Output</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="public/graph.png" width="80%" style="border:1px solid #ccc; padding:8px; border-radius:8px;"/>
+    </td>
+  </tr>
+</table>
+----
+
+## 🛠 Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,flask,html,css,bootstrap" />
+</p>
+
+<p align="center">
+  🧠 Dijkstra’s Algorithm • 📊 Graph (Adjacency List) • 📈 NetworkX • 📉 Matplotlib
+</p>
+
+<table align="center">
+  <tr>
+    <th>Category</th>
+    <th>Technology Used</th>
+  </tr>
+  <tr>
+    <td>Language</td>
+    <td>Python</td>
+  </tr>
+  <tr>
+    <td>Algorithms</td>
+    <td>Dijkstra’s Algorithm</td>
+  </tr>
+  <tr>
+    <td>Data Structures</td>
+    <td>Graph (Adjacency List)</td>
+  </tr>
+  <tr>
+    <td>Backend</td>
+    <td>Flask</td>
+  </tr>
+  <tr>
+    <td>Visualization</td>
+    <td>NetworkX, Matplotlib</td>
+  </tr>
+  <tr>
+    <td>Frontend</td>
+    <td>HTML, CSS, Bootstrap</td>
+  </tr>
+  <tr>
+    <td>CLI Interface</td>
+    <td>Python (Menu-based CLI)</td>
+  </tr>
+  <tr>
+    <td>Environment</td>
+    <td>.venv</td>
+  </tr>
+</table>
 
 ---
 
@@ -60,20 +141,6 @@ Built using **Python, Flask, NetworkX, and Matplotlib**, this system allows user
 ### 🔄 Case-Insensitive Input
 - Accepts both uppercase and lowercase inputs
 
----
-
-## 🛠 Tech Stack
-
-| Category        | Technology Used                     |
-|----------------|------------------------------------|
-| Language        | Python                             |
-| Algorithms      | Dijkstra’s Algorithm               |
-| Data Structures | Graph (Adjacency List)             |
-| Backend         | Flask                              |
-| Visualization   | NetworkX, Matplotlib               |
-| Frontend        | HTML, CSS, Bootstrap               |
-| CLI Interface   | Python (Menu-based CLI)            |
-| Environment     | Python Virtual Environment (.venv) |
 
 ---
 
@@ -99,31 +166,6 @@ Smart-Route-Optimizer/
 └── .gitignore
 
 ```
----
-
-## 📸 Screenshots
-
-<table>
-  <tr>
-    <td align="center"><b>Initial State (No Routes Added)</b></td>
-  </tr>
-  <tr>
-    <td><img src="public/before-added-route.png" width="100%"/></td>
-  </tr>
-  <tr>
-    <td align="center">Adding Routes<b></b></td>
-  </tr>
-  <tr>
-    <td><img src="public/after-added-route.png" width="100%"/></td>
-  </tr>
-
-  <tr>
-    <td align="center"><b>Shortest Path & Graph Visualization Output</b></td>
-  </tr>
-  <tr>
-    <td><img src="public/graph.png" width="100%"/></td>
-  </tr>
-</table>
 
 ## 👤 User Workflow
 
